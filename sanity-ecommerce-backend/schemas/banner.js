@@ -27,6 +27,11 @@ export default {
             type: 'string',
         },
         {
+            name: 'fullDescription',
+            title: 'FullDescription',
+            type: 'string'
+        },
+        {
             name: 'smallText',
             title: 'SmallText',
             type: 'string',

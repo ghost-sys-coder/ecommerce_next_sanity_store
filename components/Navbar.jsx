@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
       <p className="logo">
-        <Link href='/'>Beast Headphones</Link>
+        <Link href='/'>Vanox</Link>
       </p>
 
       <button type='button'

@@ -619,6 +619,27 @@ margin-top: 160px;
   margin-top: 10px;
 }
 
+.cancelled-wrapper {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancelled-wrapper h1 {
+  font-size: 2.5rem;
+}
+
+.cancelled-wrapper a {
+  font-size: 1.5rem;
+  padding: .8rem 2.5rem;
+  border-radius: 1rem;
+  background-color: red;
+  color: #fff;
+}
+
 @media screen and (max-width:800px) {
   .hero-banner-container{
     height: 560px;

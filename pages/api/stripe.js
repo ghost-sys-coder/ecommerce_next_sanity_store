@@ -19,12 +19,14 @@ export default async function handler(req, res) {
                   const img = item.image[0].asset._ref;
                   const newImage = img.replace('image-', 'https://cdn.sanity.io/images/afnuknpt/production/').replace('-webp', '.webp');
 
+                  const newImageJPG = img.replace('image-', 'https://cdn.sanity.io/images/afnuknpt/production/').replace('-jpg', '.jpg');
+                
                   return {
                       price_data: {
                           currency: 'usd',
                           product_data: {
                               name: item.name,
-                              images: [newImage],
+                              images: [newImage, newImageJPG],
                           },
                            unit_amount: item.price * 100,
                       },
